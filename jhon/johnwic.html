@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3d2f6dddc1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header start -->
+    <header id="main-header">
+      <div class="main-header-inner">
+        <!-- header-left -->
+        <div id="main-header-left">
+          <div class="main-header-logo">
+            <h1 class="logo">
+              <a href="#">logo</a>
+            </h1>
+          </div>
+          <ul class="main-header-ul">
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li><a href="#">character</a></li>
+            <li><a href="#">gallery</a></li>
+          </ul>
+        </div>
+        <!-- header-right -->
+        <div id="main-header-right">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- sesction main start-->
+    <section id="main-wrap">
+      <div id="main-flex-container">
+        <div class="main-left item">
+          <div class="img-container">
+            <img src="img/johnwicktitle.png" alt="" />
+          </div>
+          <div class="text-container">
+            <p>CHAPTER1 - JOHN WICK</p>
+            <p>
+              I shouldn't have touched him. Revenge against enemies who chose
+              the wrong person!John Wick, a killer called a legend, retires from
+              the world of crime by meeting his beloved woman and getting
+              married. Happiness is also briefly delivered as a gift to his wife
+              before she dies. Then one day, unidentified men rush into his
+              house...
+            </p>
+            <ul>
+              <li><strong>Release</strong>2015, January 21</li>
+              <li><strong>Director</strong>Chad Stahelski</li>
+              <li><strong>Genre</strong>Action, Thriller</li>
+            </ul>
+          </div>
+
+          <!-- button -->
+          <div id="button-box">
+            <button>
+              <a href="#">watch</a>
+            </button>
+            <button>
+              <a href="#"> rean more</a>
+            </button>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="main-right item">
+          <div class="right-side">
+            <span class="trailer">trailer</span>
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+        </div>
+      </div>
+
+      <div id="main-bottom">
+        <div class="bottom-img">
+          <img src="img/footer-facebook.png" alt="" />
+          <img src="img/footer-youtube.png" alt="" />
+          <img src="img/footer-twitter.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const button = document.querySelector("button");
+
+      function display() {
+        //함수선언
+        alert("클릭했습니다.");
+      }
+
+      button.addEventListener("click", display);
+    </script>
+  </body>
+</html>
