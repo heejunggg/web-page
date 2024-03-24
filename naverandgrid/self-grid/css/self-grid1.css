@@ -1,0 +1,63 @@
+html,
+body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px auto 60px; */
+
+  grid-template:
+  /* "각 행의 영역" 각 행의 높이
+      / 열의 너비
+   */
+    "m m h h h h h h h h h h" 100px
+    "m m c c c c c c c c c c" auto
+    "f f f f f f f f f f f f " 180px
+    / 200px 100px 1fr; /*m을 300px로 주고있고 나머지 10열은 1fr로 주고있따.*/
+}
+
+.header {
+  /* grid-column: 2 / 13; */
+  grid-area: h;
+  background-color: #137279;
+}
+.menu {
+  grid-area: m;
+  background-color: #ff6f69;
+  /* grid-row: 1 / 3; */
+}
+
+.container .content {
+  /* grid-column: 2 / 13; */
+  grid-area: c;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: repeat(auto-fit, minmax(50px, 300px)); */
+  grid-template-columns: repeat(4, minmax(50px, 300px));
+
+  background-color: #88d8b0;
+}
+
+.content-list {
+  background-color: orange;
+  height: 500px;
+}
+
+.footer {
+  grid-area: f;
+  background-color: #031743;
+  /* grid-column: 1 / 13; */
+}
+
+/* 
+grid-template-area 속성을 이용하여 각 그리드에 배치할 요소들의 이름을 지정한다.
+(12컬럼을 사용하므로 각row에 12개씩 구분하여 지정한다.)
+
+*/
