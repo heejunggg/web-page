@@ -42,9 +42,8 @@
   /* border: 1px solid green; */
 }
 
-.wrowide-gutters.row-container {
+.wide-width.row-container {
   width: 1440px;
-  margin-top: 100px;
 
   /* border: 1px solid green; */
 }
@@ -62,7 +61,7 @@
   align-items: center;
 }
 
-#main-nav nav ul li a {
+#main-nav nav ul li a.tit {
   display: block;
   padding: 0 24px;
   height: 80px;
@@ -77,13 +76,11 @@
 /* section-0 start */
 section {
   position: relative;
-  height: 400px;
+  /* height: 400px; */
   margin: 48px 0;
   /* border: 1px solid sandybrown; */
 }
-section:nth-of-type(2) {
-  /* border: 1px solid sandybrown; */
-}
+
 #main-nav + section {
   /* padding-top: 100px; */
   padding-top: 150px;
@@ -160,19 +157,19 @@ section:nth-of-type(2) {
 }
 .column-container {
   flex: 1;
-
   display: flex;
   flex-direction: column;
+  padding: 0 13px;
 
   /* border: 1px solid skyblue; */
 }
-.wrowide-gutters .column-container {
-  padding: 5% 3%;
+.wide-width .column-container {
+  padding: 0% 3%;
 }
 .column-8 {
   flex: 0 0 60% !important;
   max-width: 60% !important;
-  /* border: 1px solid blanchedalmond; */
+  /* border: 1px solid rgb(182, 12, 80); */
 }
 .column-8.c8padding {
   padding: 0 30px;
@@ -180,13 +177,15 @@ section:nth-of-type(2) {
 .column-4 {
   flex: 0 0 27% !important;
   max-width: 27% !important;
-
   /* border: 1px solid blueviolet; */
 }
-.column-4 .c4-img {
+/* a */
+.card {
   display: block;
+  width: 100%;
   height: auto;
-  padding: 20px;
+  padding: 10px;
+  box-sizing: border-box;
   margin-bottom: 20px;
   border-radius: 8px;
   cursor: pointer;
@@ -194,15 +193,66 @@ section:nth-of-type(2) {
   box-shadow: 0 10px 70px 0 rgba(103, 151, 255, 0.22),
     0 15px 105px 0 rgba(103, 151, 255, 0.22);
 }
-.column-4 .c4-img img {
+/* 모든img */
+.card img {
   width: 100%;
   height: auto;
+  display: block;
+}
+.column-3 {
+  flex: 0 0 20% !important;
+  max-width: 20%;
+  /* border: 1px solid salmon; */
+}
+.column-3 .c5-img {
+  display: block;
+}
+.column-6 {
+  flex: 0 0 41.5% !important;
+  max-width: 41.5%;
+  /* border: 1px solid salmon; */
+}
+.column-7 {
+  flex: 0 0 58%;
+  /* 임시 */
+  /* height: 300px; */
+  /* border: 1px solid salmon; */
+}
+.column-7 img {
+  width: 100%;
+  height: auto;
+}
+/* build */
+.column-9 {
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+.builder-preview .card-btton-navigation {
+  align-items: center;
+  justify-content: center;
+}
+.builder-preview .card-btton-navigation .cardabox {
+  width: 100%;
+}
+/* 구름모양 */
+.navigation-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.cardabox .build-card {
+  display: block;
+  text-align: center;
+}
+.wide-width .column-container.block {
+  padding: 0%;
 }
 .column-container .box {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  /* border: 1px solid rgba(255, 255, 255, 0.8); */
 }
 .column-container.centered {
   align-items: center;
@@ -234,6 +284,15 @@ a.p-title {
 .p-title.voice {
   color: #4a42ec;
 }
+.p-title.edu {
+  color: #8f42ec;
+}
+.p-title.res {
+  color: #ff4c00;
+}
+.p-title.service {
+  color: #3776ff;
+}
 
 .sqare-box {
   display: flex;
@@ -245,17 +304,72 @@ a.p-title {
   padding: 5px;
   background-color: #58ef58;
 }
-.lorem-p {
-  font-size: 15px;
+/* p.lead가 section마다 색이 다를 수 있기 때문에 색은 따로 빼놓는다.! */
+p.lead {
+  font-size: 18px;
   max-width: 850px;
+}
+p {
   color: #bebebe;
 }
 #cloud-blur {
-  margin-top: -7vw;
+  margin-top: -4vw;
 }
 #cloud-blur-1 {
-  margin-top: 0;
+  margin-top: 10vw;
 }
 #cloud-blur-2 {
-  margin-top: -7vw;
+  margin-top: -3vw;
+}
+#cloud-blur-3 {
+  margin-top: -5vw;
+}
+#cloud-blur-4 {
+  margin-top: 8vw;
+}
+
+.builder-preview {
+  display: flex;
+  height: 100%;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid yellow; */
+}
+
+.build-img-box {
+  position: relative;
+  width: 100%;
+  padding-bottom: 83%;
+  height: auto;
+}
+.build-img-box .build-img {
+  display: block;
+  position: absolute;
+  /* border: 1px solid red; */
+}
+.build-img-box .build-img:first-of-type {
+  width: 73%;
+  height: auto;
+  right: 0;
+}
+.build-img-box .build-img:last-of-type {
+  margin-top: 180px;
+}
+.button {
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 100px;
+  background-color: #3776ff;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+p + .button {
+  margin-top: 20px;
+}
+.andmore {
+  justify-content: center;
 }
