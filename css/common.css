@@ -42,6 +42,13 @@ h3 {
   -webkit-background-clip: text;
   color: #6797ff;
 }
+.headline2.customize {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(120deg, #425cec, #342bea);
+  -webkit-background-clip: text;
+  color: #4a42ec;
+}
+
 .s01-color {
   color: #4a42ec;
 }
@@ -56,4 +63,7 @@ p {
 }
 .flex-jfc {
   justify-content: center;
+}
+.lineh {
+  line-height: 1.6;
 }
